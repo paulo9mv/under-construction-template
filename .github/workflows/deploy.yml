@@ -2,6 +2,9 @@ name: Deploy
 
 on:
   workflow_dispatch:
+  push:
+    tags:
+      - '*'  # Triggers when any tag is pushed
 
 permissions:
   contents: read
